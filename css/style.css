@@ -5,19 +5,40 @@
     margin: 0;
 }
 
-body{
-    color: white;
-    font-family: 'Circular Std', sans-serif;
+.flex-container{
+    display: flex;
 }
 
-main{
+main .container{
     width: 100%;
     height: 90vh;
-    background-color: orange;
 }
 
-footer{
+main .container #contain-left{
+    width: 10%;
+    height: 100%;
+    background-color: #000000;
+}
+
+main .container #contain-right{
+    width: 90%;
+    height: 100%;
+}
+
+main .container #contain-right .nav-top{
+    width: 100%;
+    height: 10%;
+    background-color: #080b12;
+}
+
+main .container #contain-right .contain-row{
+    width: 100%;
+    height: 90%;
+    background-color: #141922;
+}
+
+footer .footer-container{
     width: 100%;
     height: 10vh;
-    background-color: red;
+    background-color: #282828;
 }
