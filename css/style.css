@@ -4,3 +4,20 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    color: white;
+    font-family: 'Circular Std', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    background-color: orange;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+}
