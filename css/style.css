@@ -8,7 +8,9 @@
 body{
     color: #7c7e83;
     font-family: 'Circular Std', sans-serif;
+    font-size: 14px;
 }
+
 .text-white{
     color: white;
 }
@@ -29,6 +31,18 @@ main .container #contain-left{
     background-color: #000000;
 }
 
+main .container #contain-left .img{
+    height: 30px;
+    vertical-align: middle;
+}
+
+main .container #contain-left .small-img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 main .container #contain-left .options-top{
     width: 100%;
     height: calc(100% - 80px);
@@ -41,8 +55,11 @@ main .container #contain-left .options-top div{
 }
 
 main .container #contain-left .options-top #plus{
-    font-size:40px;
-    vertical-align: top;
+    background-color: #a3a3a3;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    margin-right: 5px;
 }
 
 main .container #contain-left .options-top ul li{
@@ -51,8 +68,7 @@ main .container #contain-left .options-top ul li{
 
 main .container #contain-left .options-bottom{
     width: 100%;
-    height: 80px;
-    
+    height: 80px;  
 }
 
 main .container #contain-left .options-bottom h4{
@@ -60,8 +76,8 @@ main .container #contain-left .options-bottom h4{
 }
 
 main .container #contain-left .options-bottom #user{
-    font-size: 30px;
-    vertical-align: middle;
+    background-color: #808080;
+    border-radius: 50%;
 }
 
 main .container #contain-left .options-bottom hr{
@@ -90,10 +106,11 @@ main .container #contain-right .nav-top{
     padding: 10px;
 }
 
-main .container #contain-right .nav-top .button{
-    width: 250px;
-    height: 100%;
-    background-color: lightslategrey;
+main .container #contain-right .nav-top button{
+    border: white solid 1px;
+    padding: 10px 45px;
+    background-color: #080b12;
+    border-radius: 50px;
 }
 
 main .container #contain-right .contain-row{
