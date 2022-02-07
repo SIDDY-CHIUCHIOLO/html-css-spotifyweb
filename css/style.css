@@ -6,8 +6,11 @@
 }
 
 body{
-    color: white;
+    color: #7c7e83;
     font-family: 'Circular Std', sans-serif;
+}
+.text-white{
+    color: white;
 }
 
 .flex-container{
@@ -17,36 +20,71 @@ body{
 main .container{
     width: 100%;
     height: calc(100vh - 70px) ;
+    
 }
 
 main .container #contain-left{
-    width: 10%;
+    width: 15%;
     height: 100%;
     background-color: #000000;
-    padding: 10px;
 }
 
 main .container #contain-left .options-top{
     width: 100%;
-    height: calc(100% - 50px) ;
-    background-color: lightslategrey;
+    height: calc(100% - 80px);
+    line-height: 40px;
+    padding: 20px 60px 0 15px;
+}
+
+main .container #contain-left .options-top div{
+    padding: 5px 0;
+}
+
+main .container #contain-left .options-top #plus{
+    font-size:40px;
+    vertical-align: top;
+}
+
+main .container #contain-left .options-top ul li{
+    list-style: none;
 }
 
 main .container #contain-left .options-bottom{
     width: 100%;
-    height: 50px;
-    background-color: blue;
+    height: 80px;
+    
+}
+
+main .container #contain-left .options-bottom h4{
+    display: inline;
+}
+
+main .container #contain-left .options-bottom #user{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+main .container #contain-left .options-bottom hr{
+    margin: 10px 15px;
+}
+
+main .container #contain-left .options-bottom div{
+    padding: 0 15px;
+}
+
+main .container #contain-left .options-bottom div.install{
+    font-size:13px;
 }
 
 main .container #contain-right{
-    width: 90%;
+    width: 85%;
     height: 100%;
     overflow: auto;
 }
 
 main .container #contain-right .nav-top{
     width: 100%;
-    height: 10%;
+    height: 65px;
     background-color: #080b12;
     justify-content: flex-end;
     padding: 10px;
@@ -77,7 +115,6 @@ main .container #contain-right .contain-row .row{
     margin-bottom: 10px;
     background-color: lightslategray;
 }
-
 
 footer .footer-container{
     width: 100%;

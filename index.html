@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
-                
+    <!-- link font font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- link font family -->
+    <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">   
     <title>Spotify</title>
     <link rel="icon" href="img/favicon.ico">
 </head>
@@ -18,8 +21,72 @@
 
             <!-- contenitore di sinistra -->
             <div id="contain-left">
-                <div class="options-top"></div>
-                <div class="options-bottom"></div>
+
+                <!-- opzioni di Spotify -->
+                <div class="options-top">
+
+                    <!-- logo Spotify -->
+                    <div>
+                        <img src="img/logo.svg" alt="logo di Spotify">
+                    </div>
+
+                    <!-- icone con le opzioni -->
+                    <div>
+                        <ul>
+                            <li>
+                                <i class="fas fa-home"></i>
+                                <span class="text-white"> Home </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-search"></i>
+                                <span> Cerca</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-book"></i>
+                                <span>La tua libreria</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- opzione per la creazione delle playlist -->
+                    <div>
+                        <h4 class="text-white">PLAYLIST</h4>
+                        <i id="plus" class="fas fa-plus-square"></i>
+                        <span> Crea Playlist </span>
+                    </div>
+
+                    <!-- nome plylist -->
+                    <div>
+                        <ul>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- installa app -->
+                <div class="options-bottom">
+
+                    <!-- installazione -->
+                    <div class="install">
+                        <i class="fas fa-arrow-circle-down"></i>
+                        <span>Installa app</span>
+                    </div>
+
+                    <!-- linea  -->
+                    <hr>
+
+                    <!-- user -->
+                    <div>
+                        <i id="user" class="far fa-user-circle"></i>
+                        <h4 class="text-white">Jhon Doe</h4>
+                    </div>  
+
+                </div>
+
             </div>
 
             <!-- contenitore di destra -->
