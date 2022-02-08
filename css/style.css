@@ -21,7 +21,7 @@ body{
 
 main .container{
     width: 100%;
-    height: calc(100vh - 70px) ;
+    height: calc(100vh - 85px) ;
     
 }
 
@@ -92,14 +92,14 @@ main .container #contain-left .options-bottom div{
     padding: 0 15px;
 }
 
-main .container .small-text{
-    font-size:13px;
+.small-text{
+    font-size:11px;
 }
 
 main .container #contain-right{
     width: calc(100% - 200px);
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 main .container #contain-right .nav-top{
@@ -139,7 +139,6 @@ main .container #contain-right .contain-row .header ul li{
 main .container #contain-right .contain-row .row .contain-img-text{
     text-align: center;
     margin-right: 15px;
-    width: 200px;
 }
 
 main .container #contain-right .contain-row  p{
@@ -157,20 +156,69 @@ main .container #contain-right .contain-row .row .img-radius{
 
 footer .footer-container{
     width: 100%;
-    height: 70px;
+    height: 85px;
     background-color: #282828;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0 10px;
 }
 
-footer .footer-container div{
+footer .footer-container
+.footer-album,
+.footer-play-song,
+.footer-settings{
+    align-items: center;
+}
+
+footer .footer-container .footer-album img{
+    width: 50px;
+    background-color: blue;
+}
+
+footer .footer-container .footer-album p{
+    padding: 0 20px 0 10px;
+}
+
+footer .footer-container .footer-play-song{
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footer-container .footer-play-song div{
+    align-items: center;
+}
+
+footer .footer-container i {
+    padding: 7px;
+}
+
+footer .footer-container .footer-play-song  .footer-play-song-top i#play{
+    font-size: 25px;
+}
+
+footer .footer-container .footer-play-song  .footer-play-song-buttom .line-song{
+    height: 3px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+    background-color: #7c7e83;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer .footer-container .line-song-white{
+    height: 3px;
+    width: 25%;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+}
+
+footer .footer-container .footer-settings .line-audio{
+    height: 3px;
     width: 150px;
-    height: 100%;
-    background-color: white;
-}
-
-footer .footer-container div.centre{
-    width: 500px;
-    height: 100%;
-    background-color: white;
+    border-radius: 50px;
+    border: none;
+    background-color: #7c7e83;
+    display: inline-block;
+    margin: 0 15px;
 }
