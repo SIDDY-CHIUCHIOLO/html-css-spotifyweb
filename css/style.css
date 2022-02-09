@@ -123,10 +123,6 @@ main .container #contain-right .contain-row{
     padding: 20px;
 }
 
-main .container #contain-right .contain-row .title-suggestions{
-    padding: 30px 0;
-}
-
 main .container #contain-right .contain-row .header{
     text-align: center;
 }
@@ -136,9 +132,13 @@ main .container #contain-right .contain-row .header ul li{
     padding: 0 10px ;
 }
 
+main .container #contain-right .contain-row .title-suggestions{
+    padding: 30px 0;
+}
+
 main .container #contain-right .contain-row .row .contain-img-text{
-    text-align: center;
-    margin-right: 15px;
+    width: calc(94% / 6);
+    margin: 0 0.5%;
 }
 
 main .container #contain-right .contain-row  p{
@@ -146,8 +146,7 @@ main .container #contain-right .contain-row  p{
 }
 
 main .container #contain-right .contain-row .row img{
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 main .container #contain-right .contain-row .row .img-radius{
