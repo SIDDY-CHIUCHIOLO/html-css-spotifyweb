@@ -123,6 +123,10 @@ main .container #contain-right .contain-row{
     padding: 20px;
 }
 
+main .container #contain-right .contain-row .row{
+    flex-wrap: wrap;
+}
+
 main .container #contain-right .contain-row .header{
     text-align: center;
 }
@@ -139,6 +143,7 @@ main .container #contain-right .contain-row .title-suggestions{
 main .container #contain-right .contain-row .row .contain-img-text{
     width: calc(94% / 6);
     margin: 0 0.5%;
+    text-align: center;
 }
 
 main .container #contain-right .contain-row  p{
@@ -159,6 +164,7 @@ footer .footer-container{
     background-color: #282828;
     justify-content: space-between;
     padding: 0 10px;
+    overflow-x: hidden;
 }
 
 footer .footer-container
@@ -221,3 +227,29 @@ footer .footer-container .footer-settings .line-audio{
     display: inline-block;
     margin: 0 15px;
 }
+
+
+@media screen and (max-width: 992px){
+    main .container #contain-right .contain-row .row .contain-img-text{
+        width: calc(94% / 4);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    main .container #contain-right .contain-row .row .contain-img-text{
+        width: calc(94% / 2);
+    }
+}
+
+
+/* @media screen and (max-width: 576px){
+    main .container #contain-left span, h4, a, hr, #plus{
+        display: none;
+    }
+
+    main .container #contain-left{
+        width: 100px;
+    }
+    
+}  */
