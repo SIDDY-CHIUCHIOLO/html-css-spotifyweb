@@ -9,6 +9,7 @@ body{
     color: #7c7e83;
     font-family: 'Circular Std', sans-serif;
     font-size: 14px;
+    min-width: 576px;
 }
 
 .text-white{
@@ -29,6 +30,7 @@ main .container #contain-left{
     width: 200px;
     height: 100%;
     background-color: #000000;
+    padding: 20px 15px 0 15px;
 }
 
 main .container #contain-left .img{
@@ -45,13 +47,16 @@ main .container #contain-left .small-img{
 
 main .container #contain-left .options-top{
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 90px);
     line-height: 40px;
-    padding: 20px 60px 0 15px;
 }
 
 main .container #contain-left .options-top div{
     padding: 5px 0;
+}
+
+main .container #contain-left .options-top #logo-small{
+    display: none;
 }
 
 main .container #contain-left .options-top ul li{
@@ -71,8 +76,7 @@ main .container #contain-left .options-top ul li{
 }
 
 main .container #contain-left .options-bottom{
-    width: 100%;
-    height: 80px;  
+    height: 90px;  
 }
 
 main .container #contain-left .options-bottom h4{
@@ -84,12 +88,8 @@ main .container #contain-left .options-bottom #user{
     border-radius: 50%;
 }
 
-main .container #contain-left .options-bottom hr{
-    margin: 10px 15px;
-}
-
 main .container #contain-left .options-bottom div{
-    padding: 0 15px;
+    padding: 10px 0;
 }
 
 .small-text{
@@ -136,6 +136,11 @@ main .container #contain-right .contain-row .header ul li{
     padding: 0 10px ;
 }
 
+main .container #contain-right .contain-row .header ul li, a{
+    text-decoration: none;
+    color: #7c7e83;
+}
+
 main .container #contain-right .contain-row .title-suggestions{
     padding: 30px 0;
 }
@@ -144,6 +149,7 @@ main .container #contain-right .contain-row .row .contain-img-text{
     width: calc(94% / 6);
     margin: 0 0.5%;
     text-align: center;
+    padding: 5px 0;
 }
 
 main .container #contain-right .contain-row  p{
@@ -243,13 +249,26 @@ footer .footer-container .footer-settings .line-audio{
 }
 
 
-/* @media screen and (max-width: 576px){
+@media screen and (max-width: 576px){
     main .container #contain-left span, h4, a, hr, #plus{
         display: none;
     }
 
     main .container #contain-left{
-        width: 100px;
+        width: 60px;
+    }
+
+    main .container #contain-right{
+        width: calc(100% - 60px);
     }
     
-}  */
+    main .container #contain-left .options-top #logo-small{
+        display: inline;
+    }
+
+    main .container #contain-left .options-top #logo{
+        display: none;
+    }
+
+
+}  
