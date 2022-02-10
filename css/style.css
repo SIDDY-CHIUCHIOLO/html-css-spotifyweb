@@ -10,6 +10,7 @@ body{
     font-family: 'Circular Std', sans-serif;
     font-size: 14px;
     min-width: 576px;
+    overflow-x: hidden;
 }
 
 .text-white{
@@ -59,10 +60,6 @@ main .container #contain-left .options-top #logo-small{
     display: none;
 }
 
-main .container #contain-left .options-top ul li{
-    overflow: auto;
-}
-
 main .container #contain-left .options-top #plus{
     background-color: #a3a3a3;
     padding: 10px;
@@ -77,10 +74,6 @@ main .container #contain-left .options-top ul li{
 
 main .container #contain-left .options-bottom{
     height: 90px;  
-}
-
-main .container #contain-left .options-bottom h4{
-    display: inline;
 }
 
 main .container #contain-left .options-bottom #user{
@@ -164,76 +157,90 @@ main .container #contain-right .contain-row .row .img-radius{
     border-radius: 100%;
 }
 
-footer .footer-container{
+footer{
     width: 100%;
     height: 85px;
     background-color: #282828;
-    justify-content: space-between;
-    padding: 0 10px;
     overflow-x: hidden;
-}
-
-footer .footer-container
-.footer-album,
-.footer-play-song,
-.footer-settings{
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 
-footer .footer-container .footer-album img{
-    width: 50px;
-    background-color: blue;
+footer#player div.player-album,
+footer#player div.player-controller{
+    align-items: center;
+    width: 20%;
 }
 
-footer .footer-container .footer-album p{
-    padding: 0 20px 0 10px;
+footer#player div.player-album .img-contain{
+    width: 20%;
+    min-width: 60px;
 }
 
-footer .footer-container .footer-play-song{
+footer#player div.player-album img{
+    width: 100%;
+}
+
+footer#player div.player-album .player-album-title{
+    padding: 0 40px 0 10px;
+}
+
+footer#player div.player-controller{
     flex-direction: column;
-    justify-content: center;
+    width: 40%;
+    text-align: center;
 }
 
-footer .footer-container .footer-play-song div{
+footer#player div.player-controller .wrapper{
+    justify-content: space-around;
     align-items: center;
 }
 
-footer .footer-container i {
-    padding: 7px;
-}
-
-footer .footer-container .footer-play-song  .footer-play-song-top i#play{
-    font-size: 25px;
-}
-
-footer .footer-container .footer-play-song  .footer-play-song-buttom .line-song{
-    height: 3px;
-    width: 400px;
-    border-radius: 50px;
-    border: none;
+footer#player div.player-controller .player-bar{
+    width: 60%;
     background-color: #7c7e83;
-    display: inline-block;
-    margin: 0 15px;
+    height: 3px;
+    border-radius: 50px;
 }
 
-footer .footer-container .line-song-white{
-    height: 3px;
-    width: 25%;
-    border-radius: 50px;
-    border: none;
+footer#player div.player-controller .player-bar .player-bar-inside{
+    width: 30%;
     background-color: white;
-}
-
-footer .footer-container .footer-settings .line-audio{
     height: 3px;
-    width: 150px;
     border-radius: 50px;
-    border: none;
-    background-color: #7c7e83;
-    display: inline-block;
-    margin: 0 15px;
 }
 
+footer#player div i{
+    padding: 0 10px;
+}
+
+footer#player div.player-controller #play{
+    font-size: 35px;
+}
+
+footer#player div.player-controller .play-option{
+    justify-content: center;
+    align-items: center;
+}
+
+footer#player div.player-fader .player-bar{
+    width: 100px;
+    background-color: #7c7e83;
+    height: 3px;
+    border-radius: 50px;
+}
+
+footer#player div.player-fader .player-bar .player-bar-inside{
+    width: 50px;
+    background-color: white;
+    height: 3px;
+    border-radius: 50px;
+}
+
+footer#player div.player-fader{
+    align-items: center;
+}
 
 @media screen and (max-width: 992px){
     main .container #contain-right .contain-row .row .contain-img-text{
@@ -245,6 +252,14 @@ footer .footer-container .footer-settings .line-audio{
 @media screen and (max-width: 768px){
     main .container #contain-right .contain-row .row .contain-img-text{
         width: calc(94% / 2);
+    }
+
+    footer#player div.player-album .img-contain{
+        min-width: 30px;
+    }
+
+    footer#player div.player-album .player-album-title{
+        padding: 0 0 0 5px;
     }
 }
 
@@ -269,6 +284,5 @@ footer .footer-container .footer-settings .line-audio{
     main .container #contain-left .options-top #logo{
         display: none;
     }
-
 
 }  
