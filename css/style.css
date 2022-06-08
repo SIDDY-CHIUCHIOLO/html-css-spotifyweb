@@ -104,7 +104,7 @@ main .container #contain-right .nav-top{
 }
 
 main .container #contain-right .nav-top button{
-    border: white solid 1px;
+    border: rgb(219, 219, 219) solid 2px;
     padding: 10px 45px;
     background-color: transparent;
     border-radius: 50px;
@@ -113,7 +113,7 @@ main .container #contain-right .nav-top button{
 main .container #contain-right .contain-row{
     width: 100%;
     background-color: #141922;
-    padding: 20px;
+    padding: 50px 30px;
 }
 
 main .container #contain-right .contain-row .row{
